@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="513.0" style="-fx-background-color: #0DC7FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brgySys.LogIn">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="482.0" prefWidth="493.0" style="-fx-background-color: #111111;">
+         <children>
+            <ImageView fitHeight="198.0" fitWidth="233.0" layoutX="135.0" layoutY="43.0">
+               <image>
+                  <Image url="@iconLogo.PNG" />
+               </image>
+            </ImageView>
+            <TextField id="txtUserName" fx:id="username" layoutX="156.0" layoutY="279.0" prefHeight="25.0" prefWidth="182.0" promptText="Admin UserName" style="-fx-border-color: #0DC7FF; -fx-background-radius: 5; -fx-border-radius: 5;" />
+            <PasswordField id="txtPassword" fx:id="passw" layoutX="156.0" layoutY="316.0" prefHeight="25.0" prefWidth="182.0" promptText="Admin Password" style="-fx-border-color: #0DC7FF; -fx-background-radius: 5; -fx-border-radius: 5;" />
+            <Button fx:id="btnLog" layoutX="156.0" layoutY="365.0" mnemonicParsing="false" onAction="#Login" prefHeight="27.0" prefWidth="89.0" style="-fx-background-radius: 20; -fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20;" text="Log-In" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnCancel" layoutX="249.0" layoutY="365.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="27.0" prefWidth="89.0" style="-fx-background-radius: 20; -fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20;" text="Exit" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label id="status" fx:id="logStatus" alignment="CENTER" layoutX="156.0" layoutY="249.0" prefHeight="17.0" prefWidth="182.0" text="Input Credentials" textFill="#0dc7ff" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

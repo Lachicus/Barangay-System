@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="387.0" style="-fx-background-color: #0DC7FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brgySys.UserAccount">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="319.0" prefWidth="374.0" style="-fx-background-color: #111111;">
+         <children>
+            <Button id="ext" fx:id="btnExitMenu" layoutX="111.0" layoutY="249.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20; -fx-background-radius: 20;" text="Return to Main Menu" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="addBtn" fx:id="btnDelete" layoutX="107.0" layoutY="145.0" mnemonicParsing="false" onAction="#changeAccount" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="Change User Account" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView layoutX="15.0" layoutY="10.0">
+               <image>
+                  <Image url="@iconLogo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="200.0" layoutX="129.0" layoutY="71.0">
+               <image>
+                  <Image url="@userAccLabel.png" />
+               </image>
+            </ImageView>
+            <Button id="addBtn" fx:id="btnDelete1" layoutX="107.0" layoutY="185.0" mnemonicParsing="false" onAction="#viewDefaultAccount" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="View User Account" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

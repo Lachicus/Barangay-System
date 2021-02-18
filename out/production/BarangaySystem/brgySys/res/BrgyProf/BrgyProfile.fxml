@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="800.0" style="-fx-background-color: #0DC7FF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brgySys.BarangayProfile">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="697.0" prefWidth="786.0" style="-fx-background-color: #111111;">
+         <children>
+            <Button id="addBtn" layoutX="566.0" layoutY="413.0" mnemonicParsing="false" onAction="#showAddEmployee" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="Add Employee" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="refresh" fx:id="btnRefresh" layoutX="340.0" layoutY="651.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="REFRESH" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="ext" fx:id="btnExitMenu" layoutX="565.0" layoutY="653.0" mnemonicParsing="false" onAction="#exitBrgyProf" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20; -fx-background-radius: 20;" text="Return to Main Menu" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="537.0" layoutY="192.0" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="57.0" layoutY="4.0" prefHeight="21.0" prefWidth="97.0" text="Total Population" textFill="#0dc7ff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PopulationCount" layoutX="102.0" layoutY="31.0" text="0" textFill="#0dc7ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="sceneA" fx:id="sceneGetter" layoutX="537.0" layoutY="255.0" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="58.0" layoutY="4.0" prefHeight="21.0" prefWidth="97.0" text="Brgy Employees" textFill="#0dc7ff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="EmployeesCount" layoutX="102.0" layoutY="32.0" text="0" textFill="#0dc7ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView id="table" fx:id="table_users" layoutX="13.0" layoutY="15.0" onMouseClicked="#getSelected" prefHeight="545.0" prefWidth="478.0">
+              <columns>
+                  <TableColumn id="brgy_id" fx:id="col_Id" prefWidth="37.0" text="ID" />
+                <TableColumn id="FirstName" fx:id="col_FirstName" prefWidth="144.0" text="FirstName" />
+                  <TableColumn id="LastName" fx:id="col_LastName" prefWidth="151.0" text="LastName" />
+                  <TableColumn fx:id="col_Position" prefWidth="145.0" text="Position" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txt_firstName" layoutX="14.0" layoutY="571.0" prefHeight="30.0" prefWidth="234.0" promptText="First Name" />
+            <TextField fx:id="txt_lastName" layoutX="14.0" layoutY="611.0" prefHeight="30.0" prefWidth="234.0" promptText="Last Name" />
+            <TextField fx:id="txt_Position" layoutX="257.0" layoutY="571.0" prefHeight="30.0" prefWidth="234.0" promptText="Position" />
+            <Button id="addBtn" fx:id="btnEdit" layoutX="14.0" layoutY="651.0" mnemonicParsing="false" onAction="#editEmployee" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="EDIT" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="addBtn" fx:id="btnDelete" layoutX="177.0" layoutY="651.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-background-radius: 0; -fx-border-radius: 0;" text="DELETE" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txt_brgyID" layoutX="257.0" layoutY="611.0" prefHeight="30.0" prefWidth="234.0" promptText="Generated ID" />
+            <AnchorPane id="sceneA" fx:id="sceneGetter1" layoutX="537.0" layoutY="318.0" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="53.0" layoutY="4.0" prefHeight="21.0" prefWidth="106.0" text="Registered Votees" textFill="#0dc7ff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="VoteesCount" layoutX="102.0" layoutY="32.0" text="0" textFill="#0dc7ff">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="580.0" layoutY="14.0">
+               <image>
+                  <Image url="@iconLogo3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="210.0" layoutX="537.0" layoutY="135.0">
+               <image>
+                  <Image url="@profileLogo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

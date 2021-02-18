@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="506.0" style="-fx-background-color: #0DC7FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brgySys.MainMenu">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="644.0" prefWidth="492.0" style="-fx-background-color: #111111;">
+         <children>
+            <Button fx:id="btnLog" layoutX="146.0" layoutY="239.0" mnemonicParsing="false" onAction="#appBrgyProfile" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF;" text="Barangay Profile" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnLog1" layoutX="146.0" layoutY="302.0" mnemonicParsing="false" onAction="#appResidentProfile" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF;" text="Residents Profiles" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="81.0" layoutY="224.0">
+               <image>
+                  <Image url="@iconLogo3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="81.0" layoutY="354.0">
+               <image>
+                  <Image url="@iconLogo2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLog11" layoutX="146.0" layoutY="365.0" mnemonicParsing="false" onAction="#appUserAccount" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF;" text="User Account" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="81.0" layoutY="291.0">
+               <image>
+                  <Image url="@iconLogo4.png" />
+               </image>
+            </ImageView>
+            <Button id="settings" fx:id="btnSettings" layoutX="146.0" layoutY="491.0" mnemonicParsing="false" onAction="#appSettings" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF;" text="System Settings" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="80.0" layoutY="481.0">
+               <image>
+                  <Image url="@iconLogo5.png" />
+               </image>
+            </ImageView>
+            <Button id="logout" fx:id="btnExitMenu" layoutX="170.0" layoutY="583.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20; -fx-background-radius: 20;" text="LogOut" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="152.0" fitWidth="311.0" layoutX="91.0" layoutY="45.0">
+               <image>
+                  <Image url="@menuLogo.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="81.0" layoutY="422.0">
+               <image>
+                  <Image url="@icons8-website-statistics-64.png" />
+               </image>
+            </ImageView>
+            <Button id="settings" fx:id="btnStat" layoutX="146.0" layoutY="428.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF;" text="Statistics Report" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

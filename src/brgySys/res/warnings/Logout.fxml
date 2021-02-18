@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="141.0" prefWidth="346.0" style="-fx-background-color: #0DC7FF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="brgySys.MainMenu">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="130.0" prefWidth="334.0" style="-fx-background-color: #111111;">
+         <children>
+            <Button id="logg" fx:id="logout" layoutX="40.0" layoutY="75.0" mnemonicParsing="false" onAction="#logoutOption1" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20; -fx-background-radius: 20;" text="Log out" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="logg2" fx:id="logout2" layoutX="180.0" layoutY="75.0" mnemonicParsing="false" onAction="#logoutOption2" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #303133; -fx-border-color: #0DC7FF; -fx-border-radius: 20; -fx-background-radius: 20;" text="Cancel" textFill="#0dc7ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="96.0" layoutY="27.0" text="Are you sure you want to log out?" textFill="#0dc7ff" />
+            <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="38.0" layoutY="11.0">
+               <image>
+                  <Image url="@warningLogo1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
