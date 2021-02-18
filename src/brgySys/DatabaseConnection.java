@@ -3,7 +3,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import brgySys.obj.*;
 import java.sql.*;
-
 public class DatabaseConnection {
     public Connection databaseLink;
 
