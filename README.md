@@ -27,4 +27,4 @@ This project was developed as a learning experience and a contribution to the on
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/barangay-system.git
+   https://github.com/Lachicus/Barangay-System.git
